@@ -26,6 +26,8 @@ Clone this repository to your local machine.
 
 ### Step 2: Create a Virtual Environment
 create a virtual environment to better manage dependencies.
+`python -m venv venv`
+
 
 Activate the virtual environment:
 - On **Windows**: Activate it using `venv\Scripts\activate`.
@@ -33,6 +35,7 @@ Activate the virtual environment:
 
 ### Step 3: Install Dependencies
 Install all required dependencies using `pip install -r requirements.txt`.
+
 
 
 ### Step 4: Running the Flask Application
@@ -70,3 +73,4 @@ You can find a ready-to-use Postman collection to test the API in the `postman/C
 We have successfully created the **Content Upload and Review System**, allowing for seamless movie data management, including CSV uploads, filtering, sorting, and pagination through the provided API endpoints.
 
 
+"# Content_Upload_and_Review_System" 

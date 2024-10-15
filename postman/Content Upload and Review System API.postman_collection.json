@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "07f95ce2-97a3-491e-98e9-251a26cd1440",
+		"name": "Content Upload and Review System API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39006191"
+	},
+	"item": [
+		{
+			"name": "Upload CSV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/my_project/uploads/movies_data_assignment.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/movies?page=1&per_page=10&release_year=1995&language=English&sort_by_release_date=desc&sort_by_vote_average=desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"movies"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "10"
+						},
+						{
+							"key": "release_year",
+							"value": "1995"
+						},
+						{
+							"key": "language",
+							"value": "English"
+						},
+						{
+							"key": "sort_by_release_date",
+							"value": "desc"
+						},
+						{
+							"key": "sort_by_vote_average",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

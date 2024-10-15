@@ -71,7 +71,3 @@ You can find a ready-to-use Postman collection to test the API in the `postman/C
 ## Conclusion
 
 We have successfully created the **Content Upload and Review System**, allowing for seamless movie data management, including CSV uploads, filtering, sorting, and pagination through the provided API endpoints.
-
-
-"# Content_Upload_and_Review_System" 
-"# Content_Upload_Review_System" 
